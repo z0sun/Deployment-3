@@ -7,3 +7,10 @@
 
 
 # Issues:
+
+
+# System Diagram
+
+
+
+# Optimization 
