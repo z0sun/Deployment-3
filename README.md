@@ -31,8 +31,8 @@ To automatically deploy an URL Shortener application to AWS Elastic Beanstalk us
 # Issues:
 
 
-# System Diagram
+# System Diagram:
 
 
 
-# Optimization 
+# Optimization:
