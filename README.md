@@ -12,6 +12,9 @@ To automatically deploy an URL Shortener application to AWS Elastic Beanstalk us
 
 ⁃ Jenkins is used to pull the application from the Github repository for building, testing, and deployment. ⁃ The EC2 is running on previously configured security settings with access to Ports: 80, 8080, 22. ⁃
 
+![](<img width="804" alt="Screenshot 2023-09-17 at 12 26 23 PM" src="https://github.com/z0sun/Deployment-3/assets/135557197/1c46201b-21ee-4cae-8d05-59854effee8b">
+)
+
 2. Install the Python packages python3.10-venv, python-pip, and unzip
  
  The python3.10-venv package is used to create isolated virtual environments for Python projects separate from your system wide python installation.
@@ -20,13 +23,16 @@ To automatically deploy an URL Shortener application to AWS Elastic Beanstalk us
 
  The unzip utility is used to extract files from ZIP archives. 
 
-3. Create a multibranch pipeline within your Jenkins server.
+3. Create a multibranch pipeline within your Jenkins server in order to build and deploy different branches of your code separately.
 
-4. Install AWS CLI.
+4. Select GitHub as the branch source which allows you to connect Jenkins with your GitHub repository automatically triggering builds when changes are made to your code.
 
-5. Install AWS Elastic Beanstalk CLI.
+5. Install AWS EB CLI. 
 
-6. Add this stage to your Jenkins file stage ('Deploy') { steps { sh '/var/lib/jenkins/.local/bin/eb deploy' } }. This allows the application to be triggered automatically.
+7. Add the `deploy` stage to your Jenkins file stage ('Deploy') { steps { sh '/var/lib/jenkins/.local/bin/eb deploy' } }. This step defines a deployment stage in your pipeline which instructs Jenkins to deploy your application using the EB CLI.
+
+8. Configure a Webhook in your GiHub repository which will allow GitHub to notify Jwnkins whenever changes are pushed to your repository. This automation ensures the Jenkins build and deploy processes are triggered automatically.
+
 
 # Issues:
 
