@@ -39,7 +39,11 @@ To automatically deploy an URL Shortener application to AWS Elastic Beanstalk us
 
 
 # Issues:
+I encountered issues with AWS credentials while trying to install AWS CLI. Simple syntax corrections fixed this issue.
+<img width="832" alt="Screenshot 2023-09-15 at 3 29 00 PM" src="https://github.com/z0sun/Deployment-3/assets/135557197/1827b6cd-dcde-4d4b-b9bc-c010ea6d5ef0">
 
+Issues with AWS EB occured when trying to make commits via the AWS EB CLI.
+<img width="832" alt="Screenshot 2023-09-15 at 3 58 17 PM" src="https://github.com/z0sun/Deployment-3/assets/135557197/9caee4b2-be2a-4064-9731-679665093016">
 
 # System Diagram:
 
