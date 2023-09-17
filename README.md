@@ -24,12 +24,13 @@ To automatically deploy an URL Shortener application to AWS Elastic Beanstalk us
 
 4. Select GitHub as the branch source which allows you to connect Jenkins with your GitHub repository automatically triggering builds when changes are made to your code.
 
- <img width="790" alt="Screenshot 2023-09-17 at 12 47 31 PM" src="https://github.com/z0sun/Deployment-3/assets/135557197/d9f45c8f-3e7d-4b78-bf4f-ca231205a56e">
- <img width="804" alt="Screenshot 2023-09-17 at 12 26 23 PM" src="https://github.com/z0sun/Deployment-3/assets/135557197/02354241-ccdd-4711-9c9b-01fdc0071f53">
-
 5. Install AWS EB CLI. 
 
 7. Add the `deploy` stage to your Jenkins file stage ('Deploy') { steps { sh '/var/lib/jenkins/.local/bin/eb deploy' } }. This step defines a deployment stage in your pipeline which instructs Jenkins to deploy your application using the EB CLI.
+
+<img width="790" alt="Screenshot 2023-09-17 at 12 47 31 PM" src="https://github.com/z0sun/Deployment-3/assets/135557197/d9f45c8f-3e7d-4b78-bf4f-ca231205a56e">
+<img width="784" alt="Screenshot 2023-09-17 at 12 26 31 PM" src="https://github.com/z0sun/Deployment-3/assets/135557197/cad84dd9-ce53-44ea-b0be-949fe6b51a6f">
+ <img width="804" alt="Screenshot 2023-09-17 at 12 26 23 PM" src="https://github.com/z0sun/Deployment-3/assets/135557197/02354241-ccdd-4711-9c9b-01fdc0071f53">
 
 8. Configure a Webhook in your GiHub repository which will allow GitHub to notify Jwnkins whenever changes are pushed to your repository. This automation ensures the Jenkins build and deploy processes are triggered automatically.
 
