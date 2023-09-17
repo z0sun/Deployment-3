@@ -43,6 +43,7 @@ To automatically deploy an URL Shortener application to AWS Elastic Beanstalk us
 
 # System Diagram:
 
+![Deployment3 drawio (1)](https://github.com/z0sun/Deployment-3/assets/135557197/d61486a0-5dc0-4d10-b3c9-44e10e55423d)
 
 
 # Optimization:
