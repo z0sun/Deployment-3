@@ -46,7 +46,7 @@ To automatically deploy an URL Shortener application to AWS Elastic Beanstalk us
 
 # ***
 
-# Issues with AWS EB occured when trying to make commits via the AWS EB CLI.
+# Issues with occured when trying to make commits via the AWS EB CLI. Confirming the corrrect IAM permissions were given to the user fixed this issue. 
 
 <img width="832" alt="Screenshot 2023-09-15 at 3 58 17 PM" src="https://github.com/z0sun/Deployment-3/assets/135557197/9caee4b2-be2a-4064-9731-679665093016">
 
